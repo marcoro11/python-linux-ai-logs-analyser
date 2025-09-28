@@ -1,0 +1,44 @@
+openai:
+  api_key: ""
+  model: "gemini-2.0-flash"
+  base_url: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  max_tokens: 2000
+  temperature: 0.3
+
+parsing:
+  auto_detect: true
+  supported_formats:
+    - syslog
+    - apache
+    - nginx
+    - auth
+    - journal
+    - custom
+  max_file_size_mb: 100
+  encoding: "utf-8"
+
+sanitization:
+  enabled: true
+  remove_ips: true
+  remove_domains: true
+  remove_paths: true
+  remove_credentials: true
+  replacement_token: "[REDACTED]"
+  
+  custom_patterns:
+    - pattern: 'password=\S+'
+      replacement: 'password=[REDACTED]'
+    - pattern: 'token=\S+'
+      replacement: 'token=[REDACTED]'
+
+output:
+  format: "console"  # console, json, html
+  verbose: false
+  save_sanitized_logs: false
+  report_file: "analysis_report.json"
+
+logging:
+  level: "INFO"
+  file: "log_analyzer.log"
+  max_size_mb: 50
+  backup_count: 3

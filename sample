@@ -1,0 +1,91 @@
+Sep 28 10:15:01 server1 CRON[1234]: (root) CMD (/usr/local/bin/backup.sh)
+Sep 28 10:15:02 server1 systemd[1]: Started Session 25 of user root.
+Sep 28 10:15:05 server1 sshd[2345]: Accepted password for admin from 192.168.1.10 port 54432 ssh2
+Sep 28 10:15:06 server1 sshd[2345]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+Sep 28 10:15:10 server1 kernel: [    0.000000] Booting Linux on physical CPU 0
+Sep 28 10:15:12 server1 kernel: [    2.345678] EXT4-fs (sda1): mounted filesystem with ordered data mode
+Sep 28 10:15:13 server1 systemd[1]: Started OpenSSH server daemon.
+Sep 28 10:15:14 server1 sudo[2456]:   admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/ls
+Sep 28 10:15:15 server1 sudo[2456]: pam_unix(sudo:session): session opened for user root by admin(uid=0)
+Sep 28 10:15:16 server1 sudo[2456]: pam_unix(sudo:session): session closed for user root
+Sep 28 10:15:20 server1 systemd[1]: Stopping Apache HTTP Server...
+Sep 28 10:15:21 server1 systemd[1]: Starting Apache HTTP Server...
+Sep 28 10:15:22 server1 httpd[2567]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name
+Sep 28 10:15:23 server1 systemd[1]: Started Apache HTTP Server.
+Sep 28 10:15:30 server1 sshd[2601]: Failed password for invalid user guest from 203.0.113.5 port 39202 ssh2
+Sep 28 10:15:31 server1 sshd[2601]: Received disconnect from 203.0.113.5 port 39202:11: Bye Bye [preauth]
+Sep 28 10:15:32 server1 sshd[2601]: Disconnected from invalid user guest 203.0.113.5 port 39202 [preauth]
+Sep 28 10:15:40 server1 kernel: [  456.123456] ata1.00: status: { DRDY ERR }
+Sep 28 10:15:41 server1 kernel: [  456.123457] ata1.00: error: { UNC }
+Sep 28 10:15:42 server1 kernel: [  456.123458] end_request: I/O error, dev sda, sector 123456
+Sep 28 10:15:50 server1 systemd[1]: Started Session 26 of user root.
+Sep 28 10:15:51 server1 sshd[2700]: Accepted password for user1 from 192.168.1.20 port 51234 ssh2
+Sep 28 10:15:52 server1 sshd[2700]: pam_unix(sshd:session): session opened for user user1 by (uid=0)
+Sep 28 10:15:55 server1 sudo[2701]:   user1 : TTY=pts/1 ; PWD=/home/user1 ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Sep 28 10:15:56 server1 sudo[2701]: pam_unix(sudo:session): session opened for user root by user1(uid=0)
+Sep 28 10:15:57 server1 sudo[2701]: pam_unix(sudo:session): session closed for user root
+Sep 28 10:16:00 server1 systemd[1]: Starting Daily apt upgrade and clean activities...
+Sep 28 10:16:01 server1 systemd[1]: Started Daily apt upgrade and clean activities.
+Sep 28 10:16:05 server1 CRON[2800]: (root) CMD (/usr/local/bin/cleanup.sh)
+Sep 28 10:16:06 server1 CRON[2801]: (root) CMD (/usr/local/bin/monitor.sh)
+Sep 28 10:16:07 server1 monitor[2801]: WARNING: High CPU load detected (95%)
+Sep 28 10:16:08 server1 monitor[2801]: CRITICAL: Disk space low on /dev/sda1 (98% used)
+Sep 28 10:16:10 server1 sshd[2900]: Failed password for root from 45.33.12.34 port 60222 ssh2
+Sep 28 10:16:11 server1 sshd[2900]: Failed password for root from 45.33.12.34 port 60222 ssh2
+Sep 28 10:16:12 server1 sshd[2900]: Failed password for root from 45.33.12.34 port 60222 ssh2
+Sep 28 10:16:13 server1 sshd[2900]: Received disconnect from 45.33.12.34 port 60222: Too many authentication failures [preauth]
+Sep 28 10:16:20 server1 kernel: [  500.543210] Out of memory: Kill process 3000 (java) score 945 or sacrifice child
+Sep 28 10:16:21 server1 kernel: [  500.543211] Killed process 3000 (java) total-vm:409600kB, anon-rss:300000kB, file-rss:0kB
+Sep 28 10:16:25 server1 systemd[1]: apache2.service: Main process exited, code=exited, status=1/FAILURE
+Sep 28 10:16:26 server1 systemd[1]: apache2.service: Failed with result 'exit-code'.
+Sep 28 10:16:27 server1 systemd[1]: Failed to start The Apache HTTP Server.
+Sep 28 10:16:30 server1 systemd[1]: nginx.service: Unit entered failed state.
+Sep 28 10:16:31 server1 systemd[1]: nginx.service: Failed with result 'core-dump'.
+Sep 28 10:16:40 server1 sshd[3100]: Accepted password for user2 from 192.168.1.25 port 52321 ssh2
+Sep 28 10:16:41 server1 sshd[3100]: pam_unix(sshd:session): session opened for user user2 by (uid=0)
+Sep 28 10:16:45 server1 kernel: [  550.987654] TCP: Possible SYN flooding on port 80. Sending cookies.
+Sep 28 10:16:50 server1 CRON[3200]: (root) CMD (/usr/local/bin/rotate_logs.sh)
+Sep 28 10:16:51 server1 rotate_logs[3200]: ERROR: Unable to rotate logs, permission denied
+Sep 28 10:17:00 server1 kernel: [  600.112233] usb 1-1: device descriptor read/64, error -71
+Sep 28 10:17:01 server1 kernel: [  600.112234] usb 1-1: reset full-speed USB device number 2 using xhci_hcd
+Sep 28 10:17:10 server1 systemd[1]: Started Session 27 of user root.
+Sep 28 10:17:15 server1 kernel: [  620.443322] eth0: link is down
+Sep 28 10:17:20 server1 kernel: [  625.554433] eth0: link is up, 1000Mbps, full-duplex, lpa 0x45E1
+Sep 28 10:17:25 server1 monitor[3300]: ALERT: Unauthorized access attempt detected
+Sep 28 10:17:30 server1 systemd[1]: mysql.service: Start request repeated too quickly.
+Sep 28 10:17:31 server1 systemd[1]: Failed to start MySQL Community Server.
+Sep 28 10:17:40 server1 sshd[3400]: Failed password for root from 198.51.100.45 port 50123 ssh2
+Sep 28 10:17:41 server1 sshd[3400]: Failed password for root from 198.51.100.45 port 50123 ssh2
+Sep 28 10:17:42 server1 sshd[3400]: Failed password for root from 198.51.100.45 port 50123 ssh2
+Sep 28 10:17:43 server1 sshd[3400]: Received disconnect from 198.51.100.45 port 50123: Too many authentication failures [preauth]
+Sep 28 10:17:50 server1 systemd[1]: Stopped PostgreSQL RDBMS.
+Sep 28 10:17:51 server1 systemd[1]: Starting PostgreSQL RDBMS...
+Sep 28 10:17:52 server1 postgres[3500]: LOG:  database system was shut down at 2025-09-28 10:17:50 UTC
+Sep 28 10:17:53 server1 postgres[3500]: LOG:  database system is ready to accept connections
+Sep 28 10:18:00 server1 CRON[3600]: (root) CMD (/usr/local/bin/report.sh)
+Sep 28 10:18:01 server1 report[3600]: ERROR: Failed to send report via SMTP
+Sep 28 10:18:10 server1 systemd[1]: Stopping Network Manager...
+Sep 28 10:18:11 server1 systemd[1]: Network Manager stopped unexpectedly.
+Sep 28 10:18:12 server1 systemd[1]: Network Manager has entered a failed state.
+Sep 28 10:18:20 server1 kernel: [  700.778899] EXT4-fs warning (device sda1): ext4_dx_add_entry: Directory index full!
+Sep 28 10:18:30 server1 monitor[3700]: INFO: System health check passed
+Sep 28 10:18:31 server1 monitor[3700]: WARNING: High memory usage detected (85%)
+Sep 28 10:18:40 server1 sshd[3800]: Accepted password for user3 from 192.168.1.30 port 60100 ssh2
+Sep 28 10:18:41 server1 sshd[3800]: pam_unix(sshd:session): session opened for user user3 by (uid=0)
+Sep 28 10:18:50 server1 kernel: [  750.987111] audit: type=1400 audit(1632812330.111:2): apparmor="DENIED" operation="open" profile="/usr/bin/less" name="/etc/shadow"
+Sep 28 10:19:00 server1 CRON[3900]: (root) CMD (/usr/local/bin/security_scan.sh)
+Sep 28 10:19:01 server1 security_scan[3900]: ALERT: Vulnerability found in package openssl
+Sep 28 10:19:10 server1 kernel: [  800.123987] systemd-journald[1]: File /var/log/journal/abcd/system.journal corrupted or uncleanly shut down, renaming and replacing.
+Sep 28 10:19:20 server1 systemd[1]: Failed to start Docker Application Container Engine.
+Sep 28 10:19:21 server1 systemd[1]: docker.service: Unit entered failed state.
+Sep 28 10:19:22 server1 systemd[1]: docker.service: Failed with result 'exit-code'.
+Sep 28 10:19:30 server1 kernel: [  820.555666] CPU0: Temperature above threshold, cpu clock throttled
+Sep 28 10:19:31 server1 kernel: [  820.555667] CPU0: Temperature/speed normal
+Sep 28 10:19:40 server1 sshd[4000]: Failed password for user root from 203.0.113.100 port 51234 ssh2
+Sep 28 10:19:41 server1 sshd[4000]: Failed password for user root from 203.0.113.100 port 51234 ssh2
+Sep 28 10:19:42 server1 sshd[4000]: Failed password for user root from 203.0.113.100 port 51234 ssh2
+Sep 28 10:19:43 server1 sshd[4000]: Connection closed by authenticating user root 203.0.113.100 port 51234 [preauth]
+Sep 28 10:19:50 server1 monitor[4100]: CRITICAL: Swap space exhausted
+Sep 28 10:19:51 server1 systemd[1]: Reached target Emergency Mode.
+Sep 28 10:19:52 server1 systemd[1]: System is running in degraded mode.
+
